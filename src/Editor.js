@@ -386,6 +386,7 @@ class StringCell extends React.Component {
     );
 
     return (
+      <tr>
       <TableCell className={BaseClassnames.Cell('--value')}>
         <input
           className={inputClasses}
@@ -394,6 +395,7 @@ class StringCell extends React.Component {
           required={this.props.type.required}
           onChange={evt => this.props.onChange(evt.target.value)}/>
       </TableCell>
+      </tr>
     );
   }
 }
